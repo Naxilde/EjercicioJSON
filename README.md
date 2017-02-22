@@ -1,7 +1,7 @@
 # EjercicioJSON
 Hearthstone card list
 
-1. Muestra una lista con todas las cartas de criatura junto con su ataque y salud.
+1. Muestra una lista de todas las cartas ordenadas por clase.
 
 2. Crea una lista con todas las mecanicas diferentes y cuenta cuantas cartas neutrales hay de cada una.
 
