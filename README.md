@@ -1,7 +1,7 @@
 # EjercicioJSON
 Hearthstone card list
 
-1. Crea una lista con todas las cartas de criatura que sean bestias y cuya clase jugable sea druida.
+1. Muestra una lista con todas las cartas de criatura tipo junto con su ataque y salud.
 
 2. Crea una lista con todas las mecanicas diferentes y cuenta cuantas cartas neutrales hay de cada una.
 
