@@ -39,3 +39,12 @@ for j in contador:
     mecanicas.append(j)
     
 # Ejercicio 3
+clase = raw_input("Clase jugable: ")
+rareza = raw_input("Rareza: ")
+for r in (datos):
+  if r["type"]!="HERO_POWER":
+    if r["set"]!="CHEAT":
+      if r["type"]!="HERO":
+        if r["playerClass"] == clase and r.get("rarity") == rareza:
+          print r["name"]
+# Ejercicio 4
