@@ -3,6 +3,7 @@ import json
 with open("cards.json") as archivo:
   datos = json.load(archivo)
 
+# Ejercicio 1
 tipo = []
 for t in (datos):
   if t["type"] not in filtro:
@@ -19,3 +20,22 @@ for i in tipo:
         if e["set"]!="CHEAT":
           if e["type"]!="HERO":
             print e["name"]
+
+# Ejercicio 2
+filtro3 = []
+for m in (datos):
+  if m.get("playerClass") == "NEUTRAL":
+    filtro3.append(m.get("mechanics"))
+
+contador = []
+for f in filtro3:
+  if f:
+    contador.append(f[0])
+
+mecanicas = []
+for j in contador:
+  if j not in mecanicas:
+    print j, contador.count(j)
+    mecanicas.append(j)
+    
+# Ejercicio 3
