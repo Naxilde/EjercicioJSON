@@ -75,3 +75,24 @@ for o in rarezas:
     f_rareza.append(o)
 
 # Ejercicio 5
+clase1 = raw_input("Clase: ")
+for w in (datos):
+  if w["type"] == "HERO_POWER":
+    if w.get("playerClass") == clase1:
+      if w["set"] == "CORE":
+        print "\n", w["playerClass"], w["name"], w["text"]
+
+for u in filtro:
+  if u !="HERO_POWER":
+    if u !="CHEAT":
+      if u !="HERO":
+        print "\n", u
+  c_cartas = []
+  for q in (datos):
+    if q["type"]== u:
+      if q.get("playerClass") == clase1:
+        if q["type"]!="HERO_POWER":
+          if q["set"]!="CHEAT":
+            if q["type"]!="HERO":
+              c_cartas.append(q["name"])
+  print len(c_cartas)
