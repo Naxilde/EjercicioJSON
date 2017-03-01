@@ -84,18 +84,18 @@ for w in (datos):
 
 for u in filtro:
   if u !="HERO_POWER":
-    if u !="CHEAT":
-      if u !="HERO":
-        print "\n", u
+    if u !="HERO":
+      print "\n", u
   c_cartas = []
   for q in (datos):
     if q["type"]== u:
       if q.get("playerClass") == clase1:
         if q["type"]!="HERO_POWER":
-          if q["set"]!="CHEAT":
             if q["type"]!="HERO":
               c_cartas.append(q["name"])
-  print len(c_cartas)
+  if u !="HERO_POWER":
+    if u !="HERO":
+      print len(c_cartas)
 
 filtro2 = []
 for n in (datos):
