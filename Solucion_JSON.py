@@ -47,4 +47,31 @@ for r in (datos):
       if r["type"]!="HERO":
         if r["playerClass"] == clase and r.get("rarity") == rareza:
           print r["name"]
+          
 # Ejercicio 4
+autor = raw_input("Autor: ")
+f_rareza = []
+rarezas = []
+lista = []
+for h in (datos):
+  if h["type"]!="HERO_POWER":
+    if h["set"]!="CHEAT":
+      if h["type"]!="HERO":
+        if h.get("rarity"):
+          if h.get("artist") == autor:
+            if h.get("name"):
+	            lista2 = []
+	            rarezas.append(h["rarity"])
+              lista2.append(h["rarity"])
+              lista2.append(h["name"])
+	            lista.append(lista2)
+
+for o in rarezas:
+  if o not in f_rareza:
+    print "\n", o, rarezas.count(o)
+    for l in lista:
+      if l[0] == o:
+	print l[1]
+    f_rareza.append(o)
+
+# Ejercicio 5
