@@ -96,3 +96,25 @@ for u in filtro:
             if q["type"]!="HERO":
               c_cartas.append(q["name"])
   print len(c_cartas)
+
+filtro2 = []
+for n in (datos):
+  if n.get("playerClass") == clase1:
+    filtro2.append(n.get("mechanics"))
+contador2 = []
+for z in filtro2:
+  if z and z[0] not in contador2:
+    contador2.append(z[0])
+
+otros = []
+for s in (datos):
+  if s.get("playerClass") != clase1:
+    if s.get("playerClass") != "NEUTRAL":
+      otros.append(s.get("mechanics"))
+otros2 = []
+for k in otros:
+  if k and k[0] not in otros2:
+    otros2.append(k[0])
+for v in contador2:
+ if v not in otros2:
+  print "Mecanica:", v
